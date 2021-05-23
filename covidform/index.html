@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img.png" type="image/icon">
+    <title>Covid-19</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+           <img src="img.png" alt="Logo" style="height:180px;">
+        </div>
+        <div class="text">
+            <h1>Autodiagnostic Covid-19 </h1><br>
+           <h3>
+
+            Covid-19 est un virus hautement infectieux et peut être mortel s'il n'est pas traité. Remplissez ce formulaire pour faire un autodiagnostic</h3>
+            <h5>
+            Notez bien que ce présent formulaire ne remplace pas une consultation médicale. Respectez toujours les consignes que vous donne un professionnel de la santé</h5>   
+    </div>
+    </header>
+    <main>
+      <form action="result.html"  onsubmit="return test()">
+        <fieldset class="field">
+            <legend><b>Informations Personelles</b> </legend>
+            <label for="#name">Nom* : </label>
+            <input type="text" id="name" name="fname" placeholder="Votre prénom" width="48" height="48">
+            <label for="#lname">Prénom* : </label>
+            <input type="text"  id="lname" name="lname" placeholder="Votre nom" width="48" height="48">
+            <label for="#age">Age* : </label>
+            <input type="date" id='age'placeholder="Votre age" width="48" height="48">
+            <label for="#email">E-mail* : </label>
+            <input type="text" name="email" id=" email" placeholder="Votre adresse mail" width="48" height="48">
+            <label for="#adress">Adresse* : </label>
+           <input type="text"id='adress' placeholder="Votre adresse" width="48" height="48">
+           <label for="#pnum">Numéro de Télephone : </label>
+           <input type="text"id='pnum' placeholder="Votre numéro de Téléphone" width="48" height="48">
+        </fieldset>
+        <fieldset>
+           <legend><b>Veuillez Répondre Aux Questions</b></legend>
+           <div class="MaladiesC">
+           <h3>Maladies chroniques :</h3>
+           <input type="checkbox"  >
+           <label for=""> Maladie cardiaque</label><br>
+           <input type="checkbox" >
+           <label for="Maladie Pulmonaire"> Maladie Pulmonaire</label><br>
+           <input type="checkbox"  >
+           <label for="3">Diabète</label><br>
+           <input type="checkbox"  >
+           <label for="">Troubles auto-immunitaire</label><br>
+        </div>
+           <h3>Les symptômes les plus communs</h3><br>
+           <h4>Fièvre :</h4>
+           <div id="fq">
+           <p>Est-ce que votre température corporelle a dépassée 38° ?</p>
+           <input type="radio" class="p3" name="temp">
+           <label for="temp">Oui</label><br>
+           <input type="radio" class="no" name="temp">
+           <label for="temp">Non</label><br>
+           <br>
+           <h4>Fatigue :</h4>
+           <p>Est-ce que vous vous sentez plus ou moins fatigué récemment ?</p>
+           <input type="radio"id="c" class="p2" name="fat">
+           <label for="fat">Oui</label><br>
+           <input type="radio"id="c" class="no" name="fat" >
+           <label for="fat">Non <br></label><br>
+           <h4>Toux :</h4>
+           <p>Avez-vous de la toux ? Quelle sorte ?</p>
+           <input type="radio"id="c" class="p3" name="toux" >
+           <label for="toux">Toux sèche</label><br>
+           <input type="radio"id="c" class="p2" name="toux" >
+           <label for="toux">Toux régulière</label><br>
+           <input type="radio"id="c" class="no" name="toux" >
+           <label for="toux">Non </label> <br>
+        </div>
+       
+        <h3>Les symptômes Sévères</h3>
+           <p>Avez-vous eu des difficultés à respirer ou un essoufflement ?</p><br>
+        <div>
+            <input type="radio"id="c" class="p5" name="resp">
+            <label for="resp">Oui</label><br>
+            <input type="radio"id="c" class="no" name="resp">
+            <label for="resp">Non</label><br>
+        <br>
+        <p>Avez-vous eu des douleurs ou pressions thoraciques ?</p>
+            <input type="radio"id="c" class="p5" name="press">
+            <label for="press">Oui</label><br>
+            <input type="radio"id="c" class="no" name="press">
+            <label for="press">Non</label><br>
+        <br>
+        <p>Avez-vous eu perte de la parole ou du mouvement ?</p>
+            <input type="radio"id="c" class="p5" name="pert">
+            <label for="pert">Oui</label><br>
+            <input type="radio"id="c" class="no" name="pert">
+            <label for="pert">Non</label>
+            <br>
+        </div>
+        <h3>Les symptômes Sévères</h3><br>
+        <p>Avez-vous eu une perte du goût de l’odorat ?</p>
+        <div>
+            <input type="radio"id="c" class="p5" name="sen">
+            <label for="sen">Oui</label><br>
+            <input type="radio"id="c" class="no" name="sen">
+            <label for="sen">Non</label>
+            <br>
+        <br>
+        <p>Avez-vous des maux de gorge ? </p>
+            <input type="radio"id="c" class="p1" name="maux">
+            <label for="maux">Oui</label><br>
+            <input type="radio"id="c" class="no" name="maux">
+            <label for="maux">Non</label><br>
+        <br>
+        <p>Avez-vous des maux de tête ?</p>
+       
+            <input type="radio"id="c" class="p1" name="tete">
+            <label for="tete">Oui</label><br>
+            <input type="radio"id="c" class="no" name="tete">
+            <label for="tete">Non</label><br>
+        </div>
+        </fieldset>
+        <button type="submit" >Afficher le résultat</button>
+    </form>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

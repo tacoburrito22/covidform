@@ -1,0 +1,82 @@
+body{
+    background-color: rgba(168, 144, 253, 0.267);
+}
+header {
+  display: flex;
+  height: 32%;
+  background-color: rgba(79, 77, 194, 0.8);
+  color: white;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* {
+    padding: 0;
+    margin: 0;
+  }
+body {
+  font-family:"Arial", "Josefin Sans", sans-serif;
+  width: 100%;
+}
+.field input {
+    width: 100%;
+    margin: 0.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid rgba(79, 77, 194, 0.8);
+    border-radius: 5px;
+    line-height: 35px;
+  }
+fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 15px;
+    border: 6px solid rgba(79, 77, 194, 0.8);
+    border-radius: 5px;
+  }
+main {
+  display: flex;
+  flex-direction: column;
+  font-family:"Arial", "Josefin Sans", sans-serif;
+  list-style-type: none;
+  margin-top: 1%;
+  padding: 0;
+  top: 0;
+  margin-bottom: 2%;
+}
+form {
+  width: 90%;
+  padding: 1%;
+  margin-right: 4%;
+  margin-left: 4%;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+legend {
+  font-size: 20px;
+}
+.field {
+  height: 400px;
+}
+button {
+  height: 30px;
+  border: 1px solid rgba(79, 77, 194, 0.8);
+  background-color: rgba(79, 77, 194, 0.8);
+  color: white;
+}
